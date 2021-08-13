@@ -1,0 +1,23 @@
+.actual-todo {
+  max-width: 560px;
+  height: auto;
+  margin: 3rem auto 0;
+  padding: 0 10px;
+  position: relative;
+
+  .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    h1 {
+      color: white;
+      font-size: 3rem;
+    }
+  }
+
+  .body {
+    width: 100%;
+  }
+}

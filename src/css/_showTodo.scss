@@ -1,0 +1,12 @@
+.showTodo {
+  height: auto;
+  border-radius: 5px;
+  width: 100%;
+  background: white;
+  box-shadow: 0 1rem 1.5rem rgba(206, 206, 206, 0.5);
+
+  &.dark {
+    box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.438);
+    background: #25273c;
+  }
+}

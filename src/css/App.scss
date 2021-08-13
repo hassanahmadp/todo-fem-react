@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+// font-family: 'Josefin Sans', sans-serif;
+// font-weight: 400,700;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: #fafafa;
+
+  &.dark {
+    background: #181824;
+  }
+
+  .bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    height: 34.5%;
+    max-height: 16rem;
+  }
+}
+
+.stackShadow {
+  input {
+    width: 100%;
+  }
+}
+
+@import "./Todo";
+@import "./createTodo";
+@import "./showTodo";
