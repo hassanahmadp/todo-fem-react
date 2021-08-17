@@ -4,7 +4,9 @@ import moon from "../images/icon-moon.svg";
 import Creation from "./CreateTodo";
 import ShowCase from "./ShowTodo";
 
-const Todo = ({ dark, setDark }) => {
+const Todo = ({ dark, setDark, todoData, setTodoData }) => {
+  const [text, setText] = useState("");
+
   return (
     <div className="actual-todo">
       <div className="head">
@@ -12,8 +14,8 @@ const Todo = ({ dark, setDark }) => {
         <img src={dark ? sun : moon} alt="" onClick={() => setDark(!dark)} />
       </div>
       <div className="body">
-        <Creation dark={dark} />
-        <ShowCase dark={dark} />
+        <Creation text={text} setText={setText} todoData={todoData} setTodoData={setTodoData} dark={dark} />
+        <ShowCase todoData={todoData} setTodoData={setTodoData} dark={dark} />
       </div>
     </div>
   );

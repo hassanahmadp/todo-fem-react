@@ -1,0 +1,51 @@
+.singleTodo {
+  min-height: 64px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(167, 167, 167, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  p {
+    flex: 1 1 auto;
+    &.dark {
+      color: white;
+    }
+    &.checked {
+      text-decoration: line-through;
+    }
+  }
+
+  .checker,
+  .cross {
+    cursor: pointer;
+  }
+
+  .cross {
+    opacity: 0;
+  }
+
+  &:hover {
+    .cross {
+      opacity: 1;
+    }
+  }
+
+  .checker {
+    img {
+      pointer-events: none;
+    }
+
+    &.checked {
+      background: linear-gradient(to right bottom, hsl(192, 21%, 53%) 40%, hsl(280, 87%, 65%)) 60%;
+      img {
+        opacity: 1;
+        transform: scale(1.4);
+      }
+    }
+  }
+
+  &.checked {
+    opacity: 0.5;
+  }
+}

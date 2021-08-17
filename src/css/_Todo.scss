@@ -1,7 +1,8 @@
 .actual-todo {
   max-width: 560px;
   height: auto;
-  margin: 3rem auto 0;
+  margin: 3rem auto;
+  margin-bottom: 7rem;
   padding: 0 10px;
   position: relative;
 
@@ -14,10 +15,17 @@
     h1 {
       color: white;
       font-size: 3rem;
+      letter-spacing: 1.5rem;
     }
   }
 
   .body {
     width: 100%;
+  }
+}
+
+@media (max-width: 515px) {
+  .actual-todo {
+    margin-bottom: 12rem;
   }
 }

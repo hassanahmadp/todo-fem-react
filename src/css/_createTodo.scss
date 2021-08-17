@@ -1,5 +1,5 @@
 .creation {
-  margin: 2rem 0;
+  margin: 2rem 0 1rem;
   height: 64px;
   display: flex;
   box-shadow: 0 1rem 1.5rem rgba(206, 206, 206, 0.281);
@@ -7,22 +7,16 @@
   border-radius: 5px;
   overflow: hidden;
 
-  .roundUseless {
-    width: 26px;
-    height: 26px;
-    border: 1px solid pink;
-    border-radius: 50%;
-  }
-
   input {
     flex: 1 1 auto;
     height: 100%;
     border: none;
-    // width: 100%;
     background: white;
+    color: #25273c;
 
     &.dark {
       background: #25273c;
+      color: white;
     }
   }
   &.dark {
