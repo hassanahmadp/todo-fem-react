@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/todo-fem-react/static/css/main.b6aef3e7.chunk.css",
+    "main.js": "/todo-fem-react/static/js/main.afd2e847.chunk.js",
+    "main.js.map": "/todo-fem-react/static/js/main.afd2e847.chunk.js.map",
+    "runtime-main.js": "/todo-fem-react/static/js/runtime-main.d099f32a.js",
+    "runtime-main.js.map": "/todo-fem-react/static/js/runtime-main.d099f32a.js.map",
+    "static/js/2.d74f24d7.chunk.js": "/todo-fem-react/static/js/2.d74f24d7.chunk.js",
+    "static/js/2.d74f24d7.chunk.js.map": "/todo-fem-react/static/js/2.d74f24d7.chunk.js.map",
+    "static/js/3.3b032b0a.chunk.js": "/todo-fem-react/static/js/3.3b032b0a.chunk.js",
+    "static/js/3.3b032b0a.chunk.js.map": "/todo-fem-react/static/js/3.3b032b0a.chunk.js.map",
+    "index.html": "/todo-fem-react/index.html",
+    "static/css/main.b6aef3e7.chunk.css.map": "/todo-fem-react/static/css/main.b6aef3e7.chunk.css.map",
+    "static/js/2.d74f24d7.chunk.js.LICENSE.txt": "/todo-fem-react/static/js/2.d74f24d7.chunk.js.LICENSE.txt",
+    "static/media/bg-desktop-dark.73e47dbb.jpg": "/todo-fem-react/static/media/bg-desktop-dark.73e47dbb.jpg",
+    "static/media/bg-desktop-light.3508d620.jpg": "/todo-fem-react/static/media/bg-desktop-light.3508d620.jpg",
+    "static/media/icon-check.a8fb15d0.svg": "/todo-fem-react/static/media/icon-check.a8fb15d0.svg",
+    "static/media/icon-cross.6ee81d30.svg": "/todo-fem-react/static/media/icon-cross.6ee81d30.svg",
+    "static/media/icon-moon.6c03114b.svg": "/todo-fem-react/static/media/icon-moon.6c03114b.svg",
+    "static/media/icon-sun.910b1f9a.svg": "/todo-fem-react/static/media/icon-sun.910b1f9a.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d099f32a.js",
+    "static/js/2.d74f24d7.chunk.js",
+    "static/css/main.b6aef3e7.chunk.css",
+    "static/js/main.afd2e847.chunk.js"
+  ]
+}
