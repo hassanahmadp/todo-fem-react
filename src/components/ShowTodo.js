@@ -1,8 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import SingleTodo from "./SingleTodo";
 
 const ShowTodo = ({ dark, todoData, setTodoData }) => {
   const [filterValue, setFilterValue] = useState("all");
+
+  // forFilterValue: Only render when component is rendered for first time
+  useEffect(() => {
+    if (localStorage.getItem("filterValue")) {
+      setFilterValue(JSON.parse(localStorage.getItem("filterValue")));
+    }
+  }, []);
+  // forFilterValue: render each time state changes
+  useEffect(() => {
+    localStorage.setItem("filterValue", JSON.stringify(filterValue));
+  }, [filterValue]);
 
   const filterData = () => {
     if (filterValue === "all") {
@@ -26,19 +37,35 @@ const ShowTodo = ({ dark, todoData, setTodoData }) => {
     <div className={`showTodo ${dark ? "dark" : ""}`}>
       <div className="body">
         {filterData().map(todoTodo => (
-          <SingleTodo id={todoTodo.id} todoData={todoData} setTodoData={setTodoData} dark={dark} todoTodo={todoTodo} key={todoTodo.id} />
+          <SingleTodo
+            id={todoTodo.id}
+            todoData={todoData}
+            setTodoData={setTodoData}
+            dark={dark}
+            todoTodo={todoTodo}
+            key={todoTodo.id}
+          />
         ))}
       </div>
       <footer className={dark ? "dark" : ""}>
         <span className="left">{uncheckCounter().length} items left</span>
         <ul className={`filter ${dark ? "dark" : ""}`}>
-          <li className={`${filterValue === "all" ? "filterValue" : ""}`} onClick={() => setFilterValue("all")}>
+          <li
+            className={`${filterValue === "all" ? "filterValue" : ""}`}
+            onClick={() => setFilterValue("all")}
+          >
             All
           </li>
-          <li className={`${filterValue === "active" ? "filterValue" : ""}`} onClick={() => setFilterValue("active")}>
+          <li
+            className={`${filterValue === "active" ? "filterValue" : ""}`}
+            onClick={() => setFilterValue("active")}
+          >
             Active
           </li>
-          <li className={`${filterValue === "completed" ? "filterValue" : ""}`} onClick={() => setFilterValue("completed")}>
+          <li
+            className={`${filterValue === "completed" ? "filterValue" : ""}`}
+            onClick={() => setFilterValue("completed")}
+          >
             Completed
           </li>
         </ul>
