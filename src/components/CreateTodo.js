@@ -14,7 +14,7 @@ const CreateTodo = ({ dark, setTodoData, text, setText }) => {
   return (
     <div onKeyPress={handleKeyPress} className={`creation ${dark ? "dark" : ""}`}>
       <div className="roundUseless"></div>
-      <input value={text} onChange={e => setText(e.target.value)} type="text" className={`${dark ? "dark" : ""}`} placeholder="Create a new todo..." />
+      <input autoFocus value={text} onChange={e => setText(e.target.value)} type="text" className={`${dark ? "dark" : ""}`} placeholder="Create a new todo..." />
     </div>
   );
 };
